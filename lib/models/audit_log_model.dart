@@ -1,9 +1,9 @@
-// lib/models/audit_log_model.dart
+
 class AuditLog {
   final String id;
   final String userId;
   final String userEmail;
-  final String action; // e.g., 'LOGIN', 'LOGOUT', 'REGISTER', 'PASSWORD_RESET'
+  final String action;
   final String? details;
   final String ipAddress;
   final String? deviceInfo;
