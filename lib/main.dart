@@ -1,4 +1,4 @@
-// lib/main.dart
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:nhre/models/user_model.dart';
@@ -12,10 +12,10 @@ import 'screens/role_selection_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Firebase
+  
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  // Run the app
+  
   runApp(const MyApp());
 }
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // Auth provider will manage user state globally
+        
         ChangeNotifierProvider(create: (_) => AuthProvider()),
       ],
       child: MaterialApp(
