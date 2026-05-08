@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "623837380180",
+    "project_id": "cbnhre-8ddd5",
+    "storage_bucket": "cbnhre-8ddd5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623837380180:android:b56075ac0ff9097c94f7c1",
+        "android_client_info": {
+          "package_name": "com.example.nhre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623837380180-u91fnqhjj3doknugtkub5eot8ngqvq2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGIo4TvvXbvfcSe5rp4ePgOgIwwCREOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623837380180-u91fnqhjj3doknugtkub5eot8ngqvq2q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "623837380180-op0gumo3f5ak9612g29ddrg00gh3ajeu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nhre"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
