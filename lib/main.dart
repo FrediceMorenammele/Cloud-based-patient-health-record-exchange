@@ -37,12 +37,12 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
           fontFamily: 'Roboto',
         ),
-        // Start with SetupScreen - it will check if users exist
+        
         home: const SetupScreen(),
         routes: {
           '/login': (context) => const LoginScreen(),
           '/dashboard': (context) {
-            // Get the user from arguments or provider
+        
             final args = ModalRoute.of(context)!.settings.arguments as AppUser;
             return RoleSelectionScreen(user: args);
           },
