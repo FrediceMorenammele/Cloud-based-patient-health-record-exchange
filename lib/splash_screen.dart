@@ -1,4 +1,4 @@
-// lib/splash_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
@@ -20,18 +20,18 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> _checkAuthAndNavigate() async {
-    // Wait a moment for splash effect
+
     await Future.delayed(const Duration(seconds: 2));
 
     if (!mounted) return;
 
     final authProvider = Provider.of<AuthProvider>(context, listen: false);
 
-    // Wait for auth to initialize
+
     await Future.delayed(const Duration(milliseconds: 500));
 
     if (authProvider.currentUser != null) {
-      // User is logged in, go to role selection with user
+
       if (mounted) {
         Navigator.pushReplacement(
           context,
@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
         );
       }
     } else {
-      // User not logged in, go to login
+
       if (mounted) {
         Navigator.pushReplacement(
           context,
